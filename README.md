@@ -1,40 +1,13 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+yeoreum : 시작, 배포, 끝
+feat : 기능구현 하였을때
+fix : 개발 이슈 해결
+del : 쓸모없는 코드 삭제 (파일 삭제 같은 경우는 본인 메세지를 달아주기)
+publish : 스타일 퍼블리싱 할 때
+css: 색상 변경, 폰트 변경 (CSS등 사용자 UI 디자인 변경) → 수정인 경우
+refactor : 내부 로직은 변경 하지 않고 기존의 코드 개선하는 리팩토링시, 세미콜론 줄바꿈 포함
+merge : 머지 했을 경우
+conflict : 머지하다 충돌이 발생하여 변경 후 커밋하는 경우
+package : 라이브러리 설치 했을 경우
+docs : 문서 수정 (ex) readme, git ignore)
+file : 파일 수정, 삭제하거나 옮기는 작업만인 경우
+dir : 폴더 생성 삭제 수정
