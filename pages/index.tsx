@@ -1,13 +1,13 @@
-import '@radix-ui/themes/styles.css';
-import { Theme } from '@radix-ui/themes'
-import type { NextPage } from 'next'
+import Seo from "../components/Seo";
+import { ReactElement } from "react";
 
-const Home: NextPage = () => {
+const Home: React.FC = (): ReactElement => {
   return (
-    <Theme>
-    
-    </Theme>
-  )
-}
+    <div>
+      <Seo title="Home" />
+      <h1>Home</h1>
+    </div>
+  );
+};
 
-export default Home
+export default Home;
