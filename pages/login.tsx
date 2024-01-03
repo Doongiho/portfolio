@@ -235,7 +235,7 @@ const Login: React.FC = (): ReactElement => {
                     
                     width:30%;
                 }
-                .unselectable {
+                * {
                     -webkit-user-select: none; /* Safari */
                     -moz-user-select: none; /* Firefox */
                     -ms-user-select: none; /* IE 10+ */
