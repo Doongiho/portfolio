@@ -38,7 +38,7 @@ const Login: React.FC = (): ReactElement => {
         setShowPassword(!showPassword);
     };
     return (
-        <Card className="w-[350px] marginbg wid30">
+        <Card className="w-[350px] marginbg wid30 unselectable">
         <ul className="ultitle">
         <li
             onClick={() => setShowLogin(true)}
@@ -72,12 +72,12 @@ const Login: React.FC = (): ReactElement => {
                             />
                             <span className="absolute inset-y-0 right-0 flex items-center pr-3">
                                 {showPassword ? (
-                                    <EyeOff
+                                    <Eye
                                         className="h-4 w-4 opacity-50 cursor-pointer"
                                         onClick={togglePasswordVisibility}
                                     />
                                 ) : (
-                                    <Eye
+                                    <EyeOff
                                         className="h-4 w-4 opacity-50 cursor-pointer"
                                         onClick={togglePasswordVisibility}
                                     />
@@ -153,12 +153,12 @@ const Login: React.FC = (): ReactElement => {
                             />
                             <span className="absolute inset-y-0 right-0 flex items-center pr-3">
                                 {showPassword ? (
-                                    <EyeOff
+                                    <Eye
                                         className="h-4 w-4 opacity-50 cursor-pointer"
                                         onClick={togglePasswordVisibility}
                                     />
                                 ) : (
-                                    <Eye
+                                    <EyeOff
                                         className="h-4 w-4 opacity-50 cursor-pointer"
                                         onClick={togglePasswordVisibility}
                                     />
@@ -175,12 +175,12 @@ const Login: React.FC = (): ReactElement => {
                             />
                             <span className="absolute inset-y-0 right-0 flex items-center pr-3">
                                 {showPassword ? (
-                                    <EyeOff
+                                    <Eye
                                         className="h-4 w-4 opacity-50 cursor-pointer"
                                         onClick={togglePasswordVisibility}
                                     />
                                 ) : (
-                                    <Eye
+                                    <EyeOff
                                         className="h-4 w-4 opacity-50 cursor-pointer"
                                         onClick={togglePasswordVisibility}
                                     />
@@ -232,7 +232,14 @@ const Login: React.FC = (): ReactElement => {
                     margin-bottom:10px;
                 }
                 .wid30{
+                    
                     width:30%;
+                }
+                .unselectable {
+                    -webkit-user-select: none; /* Safari */
+                    -moz-user-select: none; /* Firefox */
+                    -ms-user-select: none; /* IE 10+ */
+                    user-select: none; /* 표준 */
                 }
                 form{
                     padding:20px 0;
